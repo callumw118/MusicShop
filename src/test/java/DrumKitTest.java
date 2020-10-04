@@ -10,7 +10,7 @@ public class DrumKitTest {
 
     @Before
     public void before(){
-        drumKit = new DrumKit(2, 6, 5);
+        drumKit = new DrumKit("Wood", "Acoustic", 2, 6, 5);
     }
 
     @Test

@@ -1,12 +1,13 @@
 package instruments;
 
-public class DrumKit implements IPlay{
+public class DrumKit extends Instrument {
 
     private int bassDrums;
     private int cymbols;
     private int toms;
 
-    public DrumKit(int bassDrums, int cymbols, int toms) {
+    public DrumKit(String material, String type, int bassDrums, int cymbols, int toms) {
+        super(material, type);
         this.bassDrums = bassDrums;
         this.cymbols = cymbols;
         this.toms = toms;
@@ -26,5 +27,9 @@ public class DrumKit implements IPlay{
 
     public String play(){
         return "Ts ts drrr bum bum diddlydooboomboom";
+    }
+
+    public double calculateMarkup() {
+        return 0;
     }
 }

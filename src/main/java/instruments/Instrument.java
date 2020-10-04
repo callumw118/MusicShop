@@ -1,6 +1,8 @@
 package instruments;
 
-public abstract class Instrument {
+import shop.ISell;
+
+public abstract class Instrument implements IPlay {
 
     private String material;
     private String type;
