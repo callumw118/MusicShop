@@ -10,7 +10,17 @@ public class GuitarTest {
 
     @Before
     public void before(){
-        guitar = new Guitar(7);
+        guitar = new Guitar("Zebra Wood", "Electric", 7);
+    }
+
+    @Test
+    public void hasMaterial(){
+        assertEquals("Zebra Wood", guitar.getMaterial());
+    }
+
+    @Test
+    public void hasType(){
+        assertEquals("Electric", guitar.getType());
     }
 
     @Test
